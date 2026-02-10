@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Google Console-->
+  <meta name="google-site-verification" content="MndRt8RBmDxdo7Gx_s9xnJRkZhk7J5PbfdFHQHk7DxM" />
+  <!-- Google Analytic tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCMVGVF9R6"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PCMVGVF9R6');
+  </script>
+
+  <!--Fav Icon-->
+  <link rel="icon" type="image/png" href="img/icon/faviconwhite.svg">
+
+  <!--Judul Tab Website-->
+  <title>SatriaF.Design | Profesional Designer & Printout</title>
+  
+   <!-- Deskripsi Website (max 160 karakter) -->
+  <meta name="description" content="SatriaF.Design adalah studio kreatif yang menyediakan jasa desain grafis, cetak, branding, dan web development secara profesional." />
+
+  <!-- Kata Kunci SEO -->
+  <meta name="keywords" content="satria ferdiansyah, satriafdesign, satria f design, satria desain, satria f desain, satriafdesain
+    profesional designer bandar lampung percetakan bandar lampung, jasa desain bandar lampung, jasa edit bandar lampung, sticker bandar lampung, banner bandar lampung
+    print out bandar lampung, jasa logo bandar lampung, pembuatan logo, jasa edit logo, jasa buat website, jasa bikin website, jasa pembuatan website,
+    pembuatan sticker dan baner di bandar lampung, percetakan terbaik di bandar lampung, 
+    desain terbaik di bandar lampung, pembuatan sticker di bandar lampung, banner bandar lampung, sticker bandar lampung, desain grafis, jasa cetak, branding, web design, desain logo, print studio, satriaf design, creative studio Indonesia" />
+
+  <!-- Nama Pemilik -->
+  <meta name="author" content="Satria Ferdiansyah" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/icon/faviconwhite.svg" type="image/svg+xml" />
+
+  <!-- Open Graph (biar cantik saat dibagikan ke medsos) -->
+  <meta property="og:title" content="SatriaF.Design - Creative Design & Print Studio" />
+  <meta property="og:description" content="Profesional Designer and Printout: jasa cetak, desain grafis, branding, dan pengembangan website." />
+  <meta property="og:image" content="https://satriafdesign.my.id/img/preview.jpg" />
+  <meta property="og:url" content="https://satriafdesign.my.id" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card (opsional tapi mantap) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SatriaF.Design - Profesional Designer & Printout" />
+  <meta name="twitter:description" content="Solusi visual terpercaya: jasa cetak, desain grafis, branding, dan pengembangan website." />
+  <meta name="twitter:image" content="https://satriafdesign.my.id/img/preview.jpg" />
+
+  <!-- Canonical URL (hindari duplicate content) -->
+  <link rel="canonical" href="https://satriafdesign.my.id" />
+  
+  <!--CSS Framework-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--CSS style-->
+  <style>
+    body.loading {
+      visibility: hidden;
+    }
+  </style>
+
+</head>
+<body class="loading bg-white text-[#4D4D4D]">
+
+  <!-- Navbar -->
+  <header class="
+                  fixed top-0 left-0 w-full px-6 py-4
+                  bg-white/70 backdrop-blur-2xl
+                  shadow-[0_2px_8px_rgba(0,0,0,0.08)]
+                "
+          style="z-index: 20;">
+
+    <div class="flex items-center justify-between">
+
+      <!-- Logo + Brand -->
+      <div class="flex items-center space-x-4">
+          <a href="#home" class="flex items-center space-x-3">
+              <img src="img/icon/logo.svg" alt="Logo" class="h-8 w-auto transition-all duration-200 
+              hover:brightness-110">
+          </a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+          <button id="menu-btn" class="text-[#4D4D4D] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center space-x-6 font-medium">
+          <a href="#layanan" class="hover:text-gray-500">Layanan</a>
+          <a href="#tentang" class="hover:text-gray-500">Tentang Kami</a>
+          <a href="#kontak" class="hover:text-gray-500">Kontak</a>
+
+        <div class="flex space-x-4 pl-4 items-center">
+          <a href="https://wa.me/+6289634196660" 
+             class="
+                    flex items-center gap-2
+                    bg-gradient-to-b from-[#25D366] to-[#1DA851]
+                    text-white text-sm
+                    px-4 py-2.5
+                    rounded-full
+                    shadow-md shadow-black/20
+                    hover:brightness-110
+                    active:translate-y-[1px]
+                    active:shadow-sm
+                    transition-all duration-200
+                   "
+          >
+            <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
+            <span class="font-medium">Hubungi Kami</span>
+          </a>
+
+          <a href="https://instagram.com/satriaf.design" target="_blank">
+            <img src="img/icon/instagram.svg" alt="Instagram" class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+          </a>
+          
+          <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
+            <img src="img/icon/facebook.svg" alt="Facebook" class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+          </a>
+          
+        </div>
+      </nav>
+
+    </div>
+
+    <!-- Mobile Menu Dropdown-->
+    <div 
+    id="mobile-menu"
+    class="
+           absolute top-full left-0 w-full bg-white/95 z-50
+           text-center text-[#4D4D4D] font-medium md:hidden
+           shadow-md overflow-hidden
+           max-h-0 opacity-0 -translate-y-2
+           transition-all duration-300 ease-in-out
+          "
+    >
+      <div class="py-6 space-y-4">
+        <a href="#layanan" class="block hover:text-gray-500">Layanan</a>
+        <a href="#tentang" class="block hover:text-gray-500">Tentang Kami</a>
+        <a href="#kontak" class="block hover:text-gray-500">Kontak</a>
+
+          <div class="flex justify-center space-x-4 pt-4 border-t border-gray-300 items-center"> 
+            <a href="https://wa.me/+6289634196660" 
+               class="
+                      flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] 
+                      text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20
+                      hover:brightness-110 active:translate-y-[1px] 
+                      active:shadow-sm transition-all duration-200 " > 
+              <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" /> 
+              <span class="font-medium">Hubungi Kami</span>
+            </a>
+            
+            <a href="https://instagram.com/satriaf.design" target="_blank"> 
+              <img src="img/icon/instagram.svg" alt="Instagram" class="w-5 h-5 transition-all duration-200 hover:brightness-150" > </a> 
+
+            <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank"> 
+                <img src="img/icon/facebook.svg" alt="Facebook" class="w-5 h-5 transition-all duration-200 hover:brightness-150" > </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 pb-12 sm:pt-16 sm:pb-16 bg-gradient-to-b from-[#FFFFFF] to-[#F6F6F6]">
+        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-10 text-center text-[#4D4D4D]">
+          Profesional Digital Printing & Graphic Design
+        </h1>  
+
+        <img src="img/icon/logor.svg" alt="SatriaF.Design Logo" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-6 mx-auto"/>
+
+        <p class="text-base md:text-xl text-[#4D4D4D] mb-6">Print & Copy | Digital Printing | Graphic Design</p>
+
+        <a href="#layanan" class="
+                                  bg-[#0071E3] hover:bg-blue-700 text-white px-6 py-3 
+                                  rounded-full text-sm md:text-base font-semibold transition-all duration-150 
+                                  active:shadow-sm shadow-md shadow-black/20 active:translate-y-[1px]
+                                  ">
+                                  Cetak Sekarang
+         </a>
+  </section>
+ <!-- Backdrop Blur (konten saja) -->
+  <div
+      id="backdrop"
+      class="
+        fixed top-[64px] left-0 w-full h-[calc(100vh-64px)]
+        backdrop-blur-2xl
+        opacity-0 pointer-events-none
+        transition-[opacity,backdrop-filter] duration-500 ease-out
+        z-10
+      "
+  ></div>
+
+  <script>
+    // Element references
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const backdrop = document.getElementById('backdrop');
+    const menuLinks = document.querySelectorAll('#mobile-menu a[href^="#"]'); // hanya link internal
+  
+    // Function to close menu & blur
+    function closeMenu() {
+      menu.classList.add('max-h-0', 'opacity-0', '-translate-y-2');
+      menu.classList.remove('max-h-[500px]', 'opacity-100', 'translate-y-0');
+  
+      backdrop.classList.add('opacity-0', 'pointer-events-none');
+      backdrop.classList.remove('opacity-100');
+    }
+  
+    // Hamburger button click → toggle menu & blur
+    btn.addEventListener('click', () => {
+      const isOpen = menu.classList.contains('opacity-100');
+  
+      if (!isOpen) {
+        // Show backdrop first
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+  
+        // Animate menu
+        requestAnimationFrame(() => {
+          menu.classList.remove('max-h-0', 'opacity-0', '-translate-y-2');
+          menu.classList.add('max-h-[500px]', 'opacity-100', 'translate-y-0');
+        });
+      } else {
+        closeMenu();
+      }
+    });
+  
+    // Click backdrop → close menu & blur
+    backdrop.addEventListener('click', closeMenu);
+  
+    // Click menu link → scroll, close menu & blur
+    menuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // hentikan jump default
+  
+        const targetId = link.getAttribute('href').substring(1); // ambil ID
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          // Scroll smooth
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+  
+        // Tutup menu & blur
+        closeMenu();
+      });
+    });
+  
+    // Extra safety: close menu saat resize ke desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) {
+        closeMenu();
+      }
+    });
+  </script>
+  
+  
+  
+  
+  
+
+
+<section class="bg-white 0 py-20">
+  <div class="max-w-7xl mx-auto px-6">
+        <h2 id="layanan" class="text-3xl font-bold text-center mb-12 text-[#4D4D4D]">Layanan Kami</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+          <!-- Baris 1 -->
+          <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center">
+            <img src="img/printer01.png" class="mx-auto mb-4 h-24" />
+            <h3 class="font-semibold text-lg">Fotocopy & Print</h3>
+            <p class="text-sm mt-2 text-gray-600">Cetak Dokumen, Fotocopy Dokumen, Tugas</p>
+          </div>
+
+          <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center">
+            <img src="img/bannerxx.png" class="mx-auto mb-4 h-24" />
+            <h3 class="font-semibold text-lg">Cetak Banner</h3>
+            <p class="text-sm mt-2 text-gray-600">Banner, Roll Banner, X-banner</p>
+          </div>
+
+          <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center">
+            <img src="img/stickerx.png" class="mx-auto mb-4 h-24" />
+            <h3 class="font-semibold text-lg">Cetak Sticker</h3>
+            <p class="text-sm mt-2 text-gray-600">Kromo A3, Vinly, Cutting Sticker, Transparant</p>
+          </div>
+
+          <!-- Baris 2 (BARU) -->
+          <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center">
+            <img src="img/undangan01.png" class="mx-auto mb-4 h-24" />
+            <h3 class="font-semibold text-lg">Undangan & Brosur</h3>
+            <p class="text-sm mt-2 text-gray-600">Undangan Acara, Brosur, Kartu Ucapan</p>
+          </div>
+
+          <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center">
+            <img src="img/fotox.png" class="mx-auto mb-4 h-24" />
+            <h3 class="font-semibold text-lg">Cetak Foto</h3>
+            <p class="text-sm mt-2 text-gray-600">Cetak foto, Bingkai, Laminating</p>
+          </div>
+
+          <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center">
+            <img src="img/posterx.png" class="mx-auto mb-4 h-24" />
+            <h3 class="font-semibold text-lg">Cetak Poster</h3>
+            <p class="text-sm mt-2 text-gray-600">Art Paper, Kartu Nama, Cetak Sertifikat</p>
+          </div>
+
+        </div>
+  </div>
+</section>
+
+<section id="tentang" class="text-white bg-gradient-to-b from-[#B11226] to-[#7A1212] py-20">
+  <div class="max-w-7xl mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Text -->
+            <div>
+              <h2 class="text-3xl font-bold mb-4">Tentang Kami</h2>
+              <p class="text-white leading-relaxed mb-4">
+                <span class="font-semibold text-white">SatriaF.Design</span> 
+                adalah layanan percetakan dan desain grafis
+                yang berbasis di Bandar Lampung, berkomitmen menghadirkan hasil cetak berkualitas dengan pelayanan terbaik.
+              </p>
+              <p class="text-white leading-relaxed mb-6">
+                Kami melayani kebutuhan cetak personal hingga bisnis, mulai dari fotocopy, banner, undangan, sticker,
+                hingga branding kendaraan untuk menunjang promosi usaha Anda.
+              </p>
+
+              <!-- Highlight -->
+              <div class="flex gap-4 mt-6">
+                <div class="px-5 py-3 rounded-xl bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] shadow-sm">
+                  <img class="w-10 h-10" src="img/icon/like.svg">
+                  <p class="font-semibold text-[#4D4D4D]">Kualitas</p>
+                </div>
+                <div class="px-5 py-3 rounded-xl bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] shadow-sm">
+                  <img class="w-10 h-10" src="img/icon/star.svg">
+                  <p class="font-semibold text-[#4D4D4D]">Terpercaya</p>
+                </div>
+                <div class="px-5 py-3 rounded-xl bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] shadow-sm">
+                  <img class="w-10 h-10" src="img/icon/check.svg">
+                  <p class="font-semibold text-[#4D4D4D]">Kemudahan</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image Card macOS style -->
+            <div class="relative">
+              <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white">
+                <img src="img/hero.png" alt="Tentang SatriaF.Design"
+                    class="w-full h-[320px] object-cover">
+              </div>
+            </div>
+
+          </div>
+  </div>
+</section>
+
+
+<section id="portfolio" class="bg-white py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold text-center mb-12 text-[#4D4D4D]">Creative Collection</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+    <!-- Box 1 -->
+    <div class="flex flex-col items-center">
+      <img src="img/icon/blackbox.svg" alt="Catalog Website" class="w-full max-w-[220px] sm:max-w-[280px] md:max-w-sm rounded mb-4">
+      <h3 class="text-lg md:text-xl font-semibold text-[#4D4D4D]">Catalog Website</h3>
+      <p class="text-sm md:text-base text-gray-600">Interactive Brand Catalog</p>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="flex flex-col items-center">
+      <img src="img/icon/whitebox.svg" alt="Exclusive Creative Series" class="w-full max-w-[220px] sm:max-w-[280px] md:max-w-sm rounded mb-4">
+      <h3 class="text-lg md:text-xl font-semibold text-[#4D4D4D]">Exclusive Creative Series</h3>
+      <p class="text-sm md:text-base text-gray-600">Limited Edition Visual Design</p>
+    </div>
+
+  </div>
+</section>
+
+<footer id="kontak" class="bg-neutral-900 text-gray-300 py-14">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- Brand -->
+    <div>
+      <h3 class="text-2xl font-bold text-white mb-2">SatriaF.Design</h3>
+      <p class="text-sm text-gray-400">
+        Percetakan & Fotocopy terpercaya di Bandar Lampung.<br>
+        Digital Printing & Graphic Design.
+      </p>
+    </div>
+
+    <!-- Kontak -->
+    <div>
+      <h4 class="font-semibold text-white mb-3">Kontak Kami</h4>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-center gap-2">
+          <img class="w-5 h-5" src="img/icon/hp1.svg" alt="WhatsApp">
+          <span>WhatsApp:</span>
+          <span class="text-gray-400">089634196660</span>
+        </li>
+
+        <li class="flex items-center gap-2">
+          <img class="w-5 h-5" src="img/icon/email.svg" alt="Surel">
+          <span>Email:</span>
+          <span class="text-gray-400">satriafdesign@gmail.com</span>
+        </li>
+
+        <li class="flex items-center gap-2">
+          <img class="w-5 h-5" src="img/icon/jam.svg" alt="Open Hour">
+          <span>Jam Buka:</span>
+          <span class="text-gray-400">08:00 - 21:00 WIB</span>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Sosial & Maps -->
+    <div>
+      <h4 class="font-semibold text-white mb-3">Temukan Kami</h4>
+      <div class="flex gap-4 mb-4">
+        <a href="https://instagram.com/satriaf.design" class="hover:text-white transition">Instagram</a>
+        <a href="https://facebook.com/satria.ferdiansyah.sf" class="hover:text-white transition">Facebook</a>
+      </div>
+
+      <!-- MAPS -->
+      <div class="rounded-xl overflow-hidden border border-neutral-700 shadow-sm">
+        <iframe 
+          src="https://www.google.com/maps?q=Bandar%20Lampung&output=embed"
+          class="w-full h-32 border-0"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-10 text-center text-xs text-gray-500">
+    © 2026 SatriaF.Design. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      // Scroll to top and remove hash
+      window.scrollTo(0, 0);
+      history.replaceState("", document.title, window.location.pathname + window.location.search);
+
+      // Tampilkan halaman setelah semuanya beres
+      document.body.classList.remove("loading");
+    }, 10);
+  });
+</script>
+</body>
+</html>
