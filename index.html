@@ -90,16 +90,17 @@
     </div>
 
   <!-- Hamburger Button -->
-     <div class="md:hidden">
-  <button id="menu-btn" class="relative w-10 h-10 flex items-center justify-center text-[#4D4D4D] focus:outline-none">
-    <!-- Line Top -->
-    <span id="lineTop" class="absolute w-6 h-0.5 bg-current rounded transition-all duration-300 ease-in-out -translate-y-2"></span>
-    <!-- Line Middle -->
-    <span id="lineMiddle" class="absolute w-6 h-0.5 bg-current rounded transition-all duration-300 ease-in-out"></span>
-    <!-- Line Bottom -->
-    <span id="lineBottom" class="absolute w-6 h-0.5 bg-current rounded transition-all duration-300 ease-in-out translate-y-2"></span>
+<div class="md:hidden">
+  <button id="menu-btn" class="relative w-6 h-6 flex flex-col justify-between items-center text-[#4D4D4D] focus:outline-none">
+    <!-- Line 1 (atas) -->
+    <span id="lineTop" class="block w-full h-0.5 bg-current rounded transition-all duration-300 ease-in-out"></span>
+    <!-- Line 2 (tengah) -->
+    <span id="lineMiddle" class="block w-full h-0.5 bg-current rounded transition-all duration-300 ease-in-out"></span>
+    <!-- Line 3 (bawah) -->
+    <span id="lineBottom" class="block w-full h-0.5 bg-current rounded transition-all duration-300 ease-in-out"></span>
   </button>
 </div>
+
 
 
       <!-- Desktop Menu -->
@@ -216,18 +217,15 @@
 
   <!-- Hamburger dan blur -->
  <script>
-// Element references
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
 const backdrop = document.getElementById('backdrop');
 const menuLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
 
-// Lines
 const lineTop = document.getElementById('lineTop');
 const lineMiddle = document.getElementById('lineMiddle');
 const lineBottom = document.getElementById('lineBottom');
 
-// Function to close menu & blur
 function closeMenu() {
   menu.classList.add('max-h-0', 'opacity-0', '-translate-y-2');
   menu.classList.remove('max-h-[500px]', 'opacity-100', 'translate-y-0');
@@ -237,21 +235,16 @@ function closeMenu() {
 
   // Reset hamburger animation
   btn.classList.remove('active');
-  lineTop.classList.remove('rotate-45');
-  lineTop.classList.add('-translate-y-2');
-
+  lineTop.classList.remove('rotate-45', 'translate-y-1.5');
   lineMiddle.classList.remove('opacity-0');
-
-  lineBottom.classList.remove('-rotate-45');
-  lineBottom.classList.add('translate-y-2');
+  lineBottom.classList.remove('-rotate-45', '-translate-y-1.5');
 }
 
-// Hamburger button click → toggle menu & blur
 btn.addEventListener('click', () => {
   const isOpen = !menu.classList.contains('opacity-100');
 
   if (isOpen) {
-    // Show backdrop first
+    // Tampilkan backdrop
     backdrop.classList.remove('opacity-0', 'pointer-events-none');
     backdrop.classList.add('opacity-100');
 
@@ -261,46 +254,36 @@ btn.addEventListener('click', () => {
       menu.classList.add('max-h-[500px]', 'opacity-100', 'translate-y-0');
     });
 
-    // Animate hamburger → X
+    // Animasi hamburger → X
     btn.classList.add('active');
-    lineTop.classList.remove('-translate-y-2');
-    lineTop.classList.add('rotate-45');
-
+    lineTop.classList.add('rotate-45', 'translate-y-1.5');
     lineMiddle.classList.add('opacity-0');
-
-    lineBottom.classList.remove('translate-y-2');
-    lineBottom.classList.add('-rotate-45');
+    lineBottom.classList.add('-rotate-45', '-translate-y-1.5');
 
   } else {
     closeMenu();
   }
 });
 
-// Click backdrop → close menu & blur
+// Click backdrop → close menu
 backdrop.addEventListener('click', closeMenu);
 
-// Click menu link → scroll, close menu & blur
+// Click menu link → scroll & close
 menuLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault(); // hentikan jump default
-
-    const targetId = link.getAttribute('href').substring(1); // ambil ID
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-
+    if (targetElement) targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     closeMenu();
   });
 });
 
-// Extra safety: close menu saat resize ke desktop
+// Safety: close menu saat resize desktop
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 768) {
-    closeMenu();
-  }
+  if (window.innerWidth >= 768) closeMenu();
 });
+
 </script>
 
 
@@ -478,6 +461,7 @@ window.addEventListener('resize', () => {
 </script>
 </body>
 </html>
+
 
 
 
