@@ -91,15 +91,11 @@
 
     <!-- Hamburger Button -->
       <div class="md:hidden">
-           <button id="menuBtn" class="relative w-10 h-10 flex items-center justify-center">
-    
-          <!-- Garis 1 -->
-          <span class="absolute w-7 h-1 bg-black rounded transition-all duration-300 ease-in-out"></span>
-          
-          <!-- Garis 2 -->
-          <span class="absolute w-7 h-1 bg-black rounded transition-all duration-300 ease-in-out translate-y-2"></span>
-      
-        </button>
+          <button id="menu-btn" class="text-[#4D4D4D] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
       </div>
 
       <!-- Desktop Menu -->
@@ -217,7 +213,7 @@
   <!-- Hamburger dan blur -->
  <script>
     // Element references
-    const btn = document.getElementById('menuBtn');
+    const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
     const backdrop = document.getElementById('backdrop');
     const menuLinks = document.querySelectorAll('#mobile-menu a[href^="#"]'); // hanya link internal
@@ -232,15 +228,22 @@
     }
   
     // Hamburger button click → toggle menu & blur
-    const btn = document.getElementById("menuBtn");
-    const lines = btn.querySelectorAll("span");
-
-    btn.addEventListener("click", () => {
-      lines[0].classList.toggle("rotate-45");
-      lines[0].classList.toggle("translate-y-0");
-
-      lines[1].classList.toggle("-rotate-45");
-      lines[1].classList.toggle("translate-y-0");
+    btn.addEventListener('click', () => {
+      const isOpen = menu.classList.contains('opacity-100');
+  
+      if (!isOpen) {
+        // Show backdrop first
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+  
+        // Animate menu
+        requestAnimationFrame(() => {
+          menu.classList.remove('max-h-0', 'opacity-0', '-translate-y-2');
+          menu.classList.add('max-h-[500px]', 'opacity-100', 'translate-y-0');
+        });
+      } else {
+        closeMenu();
+      }
     });
   
     // Click backdrop → close menu & blur
@@ -446,6 +449,7 @@
 </script>
 </body>
 </html>
+
 
 
 
