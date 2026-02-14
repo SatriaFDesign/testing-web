@@ -217,12 +217,12 @@ const menuLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
 
 // Lines
 const lineTop = document.getElementById('lineTop');
-const lineMiddle = document.getElementById('lineMiddle');
+
 const lineBottom = document.getElementById('lineBottom');
 
 // Function to close menu & blur
 function closeMenu() {
-  menu.classList.add('max-h-0', 'opacity-0', '-translate-y-2');
+  menu.classList.add('max-h-0', 'opacity-0', '-translate-y-1');
   menu.classList.remove('max-h-[500px]', 'opacity-100', 'translate-y-0');
 
   backdrop.classList.add('opacity-0', 'pointer-events-none');
@@ -231,12 +231,12 @@ function closeMenu() {
   // Reset hamburger animation
   btn.classList.remove('active');
   lineTop.classList.remove('rotate-45');
-  lineTop.classList.add('-translate-y-2');
+  lineTop.classList.add('-translate-y-1');
 
   lineMiddle.classList.remove('opacity-0');
 
   lineBottom.classList.remove('-rotate-45');
-  lineBottom.classList.add('translate-y-2');
+  lineBottom.classList.add('translate-y-1');
 }
 
 // Hamburger button click → toggle menu & blur
@@ -471,4 +471,5 @@ window.addEventListener('resize', () => {
 </script>
 </body>
 </html>
+
 
