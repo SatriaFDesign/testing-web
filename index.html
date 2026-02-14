@@ -89,18 +89,14 @@
         </a>
     </div>
 
-   <!-- Hamburger Button -->
-    <div class="md:hidden">
-      <button id="menu-btn" class="relative w-10 h-10 flex items-center justify-center text-[#4D4D4D] focus:outline-none">
-        
-        <!-- Line 1 (atas) -->
-        <span id="lineTop" class="absolute w-6 h-0.5 bg-current rounded transition-all duration-300 ease-in-out -translate-y-1.5"></span>
-        
-        <!-- Line 2 (bawah) -->
-        <span id="lineBottom" class="absolute w-6 h-0.5 bg-current rounded transition-all duration-300 ease-in-out translate-y-1.5"></span>
-        
-      </button>
-    </div>
+  <!-- Hamburger Button -->
+      <div class="md:hidden">
+          <button id="menu-btn" class="text-[#4D4D4D] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+      </div>
 
       <!-- Desktop Menu -->
       <nav class="hidden md:flex items-center space-x-6 font-medium">
@@ -277,30 +273,6 @@
         closeMenu();
       }
     });
-
-
-   //nambahin js hamburger kalau gagal hapus ini saja
-   const lineTop = document.getElementById('lineTop');
-  const lineBottom = document.getElementById('lineBottom');
-  const btn = document.getElementById('menu-btn'); 
-
-  btn.addEventListener('click', () => {
-    const isActive = btn.classList.toggle('active');
-
-    if (isActive) {
-      lineTop.classList.remove('-translate-y-1.5');
-      lineTop.classList.add('rotate-45');
-
-      lineBottom.classList.remove('translate-y-1.5');
-      lineBottom.classList.add('-rotate-45');
-    } else {
-      lineTop.classList.add('-translate-y-1.5');
-      lineTop.classList.remove('rotate-45');
-
-      lineBottom.classList.add('translate-y-1.5');
-      lineBottom.classList.remove('-rotate-45');
-    }
-  });
   </script>
 
 <section class="bg-white 0 py-20">
