@@ -180,7 +180,7 @@
   <!-- Backdrop Blur -->
   <div
     id="backdrop"
-    class="fixed top-[64px] left-0 w-full h-[calc(100vh-64px)] backdrop-blur-2xl bg-gradient-to-b from-black/60 to-black/40 opacity-0 pointer-events-none transition-[opacity,backdrop-filter] duration-500 ease-out z-10">
+    class="fixed inset-0 pt-[64px] backdrop-blur-2xl bg-black/50 opacity-0 pointer-events-none transition-all duration-500 ease-out z-10">
   </div>
 
   <!-- Hamburger Script -->
@@ -207,7 +207,6 @@
       lines[2].classList.add('translate-y-2');
 
     }
-
 
     btn.addEventListener('click', () => {
     const isOpen = menu.classList.contains('opacity-100');
