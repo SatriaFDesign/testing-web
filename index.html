@@ -68,6 +68,18 @@
     body.loading {
       visibility: hidden;
     }
+
+    /* Animasi saat muncul */
+    .animate-fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    
+    .animate-fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
 
@@ -157,22 +169,22 @@
     class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 pb-12 sm:pt-16 sm:pb-16 bg-gradient-to-b from-[#FFFFFF] to-[#F6F6F6]">
 
     <h1
-      class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-10 text-center text-[#4D4D4D]">
+      class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-10 text-center text-[#4D4D4D] animate-fade-up">
       Profesional Digital Printing & Graphic Design
     </h1>
 
     <img
       src="img/icon/logor.svg"
       alt="SatriaF.Design Logo"
-      class="w-full max-w-[220px] sm:max-w-[260px] md:max-w-[320px] lg:max-w-[380px] mb-6 mx-auto"
+      class="w-full max-w-[220px] sm:max-w-[260px] md:max-w-[320px] lg:max-w-[380px] mb-6 mx-auto animate-fade-up"
     />
 
-    <p class="text-xs sm:text-sm md:text-xl text-[#4D4D4D] mb-6 whitespace-nowrap">
+    <p class="text-xs sm:text-sm md:text-xl text-[#4D4D4D] mb-6 whitespace-nowrap animate-fade-up">
       Print & Copy | Digital Printing | Graphic Design
     </p>
 
     <a href="#layanan"
-      class="bg-[#0071E3] hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm md:text-base font-semibold transition-all duration-150 active:shadow-sm shadow-md shadow-black/20 active:translate-y-[1px]">
+      class="bg-[#0071E3] hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm md:text-base font-semibold transition-all duration-150 active:shadow-sm shadow-md shadow-black/20 active:translate-y-[1px] animate-fade-up">
       Cetak Sekarang
     </a>
   </section>
@@ -471,8 +483,26 @@
     });
   </script>
 
+  <!-- Animasi Page-->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // Hanya animasi sekali
+        }
+      });
+    }, { threshold: 0.2 }); // 20% elemen terlihat
+  
+    document.querySelectorAll('.animate-fade-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+  
 </body>
 </html>
+
 
 
 
