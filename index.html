@@ -238,6 +238,13 @@
       }
     });
 
+    menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu(); // menutup menu & backdrop
+      });
+    });
+
+    
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 768) {
         closeMenu();
@@ -466,4 +473,5 @@
 
 </body>
 </html>
+
 
