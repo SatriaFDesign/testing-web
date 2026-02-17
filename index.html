@@ -68,6 +68,7 @@
 
   <!--CSS style-->
   <style>
+    /* Reset Global */
     body.loading {
       visibility: hidden;
     }
@@ -78,7 +79,7 @@
       transform: translateY(20px);
       transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     }
-    
+    /* Animasi saat muncul */
     .animate-fade-up.show {
       opacity: 1;
       transform: translateY(0);
@@ -99,7 +100,7 @@
       <div class="flex items-center space-x-4">
         <a href="#home" class="flex items-center space-x-3">
           <img src="img/icon/logo.svg" alt="Logo"
-            class="h-6 sm:h-7 md:h-8 w-auto transition-all duration-200 hover:brightness-110">
+               class="h-6 sm:h-7 md:h-8 w-auto transition-all duration-200 hover:brightness-110">
         </a>
       </div>
 
@@ -112,58 +113,66 @@
 
       <!-- Desktop Menu -->
       <nav class="hidden md:flex items-center space-x-6">
-        <a href="#layanan" class="hover:text-gray-500">Layanan</a>
-        <a href="#tentang" class="hover:text-gray-500">Tentang Kami</a>
-        <a href="#kontak" class="hover:text-gray-500">Kontak</a>
+        <a href="#services" class="hover:text-gray-500">Services</a>
+        <a href="#portfolio" class="hover:text-gray-500">Portfolio</a>
+        <a href="#about" class="hover:text-gray-500">About</a>
+        <a href="#collection" class="hover:text-gray-500">Collection</a>
+        <a href="#contact" class="hover:text-gray-500">Contact</a>
 
         <div class="flex space-x-4 pl-4 items-center">
           <a href="https://wa.me/+6289634196660"
-            class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
-            <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
-            <span>Hubungi Kami</span>
+             class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
+             <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
+             <span>Hubungi Kami</span>
           </a>
 
           <a href="https://instagram.com/satriaf.design" target="_blank">
             <img src="img/icon/instagram.svg" alt="Instagram"
-              class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                 class="w-5 h-5 transition-all duration-200 hover:brightness-150">
           </a>
 
           <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
             <img src="img/icon/facebook.svg" alt="Facebook"
-              class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                 class="w-5 h-5 transition-all duration-200 hover:brightness-150">
           </a>
         </div>
+
       </nav>
+
     </div>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-      class="absolute top-full left-0 w-full bg-white/95 z-50 text-center text-[#4D4D4D] md:hidden shadow-md overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-300 ease-in-out"
-      style="font-family: 'Roboto', sans-serif; font-weight: 500; z-index: 20;">
+         class="absolute top-full left-0 w-full bg-white/95 z-50 text-center text-[#4D4D4D] md:hidden shadow-md overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-300 ease-in-out"
+         style="font-family: 'Roboto', sans-serif; font-weight: 500; z-index: 20;">
+
       <div class="py-6 space-y-4">
-        <a href="#layanan" class="block hover:text-gray-500">Layanan</a>
-        <a href="#tentang" class="block hover:text-gray-500">Tentang Kami</a>
-        <a href="#kontak" class="block hover:text-gray-500">Kontak</a>
+        <a href="#services" class="block hover:text-gray-500">Services</a>
+        <a href="#portfolio" class="block hover:text-gray-500">Portfolio</a>
+        <a href="#about" class="block hover:text-gray-500">About</a>
+        <a href="#collection" class="block hover:text-gray-500">Collection</a>
+        <a href="#contact" class="block hover:text-gray-500">Contact</a>
 
-        <div class="flex justify-center space-x-4 pt-4 border-t border-gray-300 items-center">
-          <a href="https://wa.me/+6289634196660"
-            class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
-            <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
-            <span>Hubungi Kami</span>
-          </a>
+      <div class="flex justify-center space-x-4 pt-4 border-t border-gray-300 items-center">
+        <a href="https://wa.me/+6289634196660"
+           class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
+           <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
+           <span>Hubungi Kami</span>
+        </a>
 
-          <a href="https://instagram.com/satriaf.design" target="_blank">
-            <img src="img/icon/instagram.svg" alt="Instagram"
-              class="w-5 h-5 transition-all duration-200 hover:brightness-150">
-          </a>
+        <a href="https://instagram.com/satriaf.design" target="_blank">
+          <img src="img/icon/instagram.svg" alt="Instagram"
+               class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+        </a>
 
-          <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
-            <img src="img/icon/facebook.svg" alt="Facebook"
-              class="w-5 h-5 transition-all duration-200 hover:brightness-150">
-          </a>
+        <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
+          <img src="img/icon/facebook.svg" alt="Facebook"
+               class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+        </a>
         </div>
       </div>
     </div>
+
   </header>
 
   <!-- Hero Section -->
@@ -184,10 +193,10 @@
 
     <p class="text-xs sm:text-sm md:text-xl text-[#4D4D4D] mb-6 whitespace-nowrap"
        style="font-family: 'Roboto', sans-serif; font-weight: 500;">
-      Print & Copy | Digital Printing | Graphic Design
+       Print & Copy | Digital Printing | Graphic Design
     </p>
 
-    <a href="#layanan"
+    <a href="#services"
       class="bg-[#0071E3] hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm md:text-base font-semibold transition-all duration-150 active:shadow-sm shadow-md shadow-black/20 active:translate-y-[1px]">
       Cetak Sekarang
     </a>
@@ -221,7 +230,6 @@
 
       lines[0].classList.add('-translate-y-2');
       lines[2].classList.add('translate-y-2');
-
     }
 
     btn.addEventListener('click', () => {
@@ -241,8 +249,8 @@
         backdrop.classList.add('opacity-100');
 
         requestAnimationFrame(() => {
-          menu.classList.remove('max-h-0', 'opacity-0', '-translate-y-2');
-          menu.classList.add('max-h-[500px]', 'opacity-100', 'translate-y-0');
+        menu.classList.remove('max-h-0', 'opacity-0', '-translate-y-2');
+        menu.classList.add('max-h-[500px]', 'opacity-100', 'translate-y-0');
         });
       } else {
         // Balik ke hamburger
@@ -260,7 +268,6 @@
       });
     });
 
-    
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 768) {
         closeMenu();
@@ -268,14 +275,14 @@
     });
   </script>
 
-  <!-- Layanan -->
-  <section class="bg-white py-20">
+  <!-- Services Section -->
+  <section id="services" class="bg-white py-20">
     <div class="max-w-7xl mx-auto px-6">
 
-      <h2 id="layanan"
+      <h2
         class="text-2xl md:text-3xl text-center mb-12 text-[#4D4D4D] animate-fade-up"
         style="font-family: 'Roboto', sans-serif; font-weight: 700;">
-        Layanan Kami
+        Services
       </h2>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -284,10 +291,10 @@
           <img src="img/printer01.png" class="mx-auto mb-4 h-24" />
           <h3 class="font-semibold text-lg"
               style="font-family: 'Roboto', sans-serif; font-weight: 500;"
-            >Fotocopy & Print</h3>
+              >Fotocopy & Print</h3>
           <p class="text-sm mt-2 text-gray-600"
              style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-            Cetak Dokumen, Fotocopy Dokumen, Tugas
+             Cetak Dokumen, Fotocopy Dokumen, Tugas
           </p>
         </div>
 
@@ -297,7 +304,7 @@
               style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Banner</h3>
           <p class="text-sm mt-2 text-gray-600"
              style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-            Banner, Roll Banner, X-banner
+             Banner, Roll Banner, X-banner
           </p>
         </div>
 
@@ -307,7 +314,7 @@
               style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Sticker</h3>
           <p class="text-sm mt-2 text-gray-600"
              style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-            Kromo A3, Vinly, Cutting Sticker, Transparant
+             Kromo A3, Vinly, Cutting Sticker, Transparant
           </p>
         </div>
 
@@ -317,7 +324,7 @@
               style="font-family: 'Roboto', sans-serif; font-weight: 500;">Undangan & Brosur</h3>
           <p class="text-sm mt-2 text-gray-600"
              style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-            Undangan Acara, Brosur, Kartu Ucapan
+             Undangan Acara, Brosur, Kartu Ucapan
           </p>
         </div>
 
@@ -327,7 +334,7 @@
               style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Foto</h3>
           <p class="text-sm mt-2 text-gray-600"
              style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-            Cetak foto, Bingkai, Laminating
+             Cetak foto, Bingkai, Laminating
           </p>
         </div>
 
@@ -337,7 +344,7 @@
               style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Poster</h3>
           <p class="text-sm mt-2 text-gray-600"
              style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-            Art Paper, Kartu Nama, Cetak Sertifikat
+             Art Paper, Kartu Nama, Cetak Sertifikat
           </p>
         </div>
 
@@ -345,95 +352,194 @@
     </div>
   </section>
 
-  <!-- Tentang -->
-  <section id="tentang"
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-[#F6F6F6] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#4D4D4D] mb-4 animate-fade-up"
+            style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+            Portfolio
+        </h2>
+        <p class="text-gray-500 text-sm md:text-base animate-fade-up"
+           style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+           Beberapa hasil cetak dan desain yang telah kami kerjakan.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+        <!-- Baris 1 -->
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up"
+             onclick="openModal(this)">
+          <img src="img/host01.jpg"
+               class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+            <h3 class="text-white text-lg"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Banner Event</h3>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up"
+             onclick="openModal(this)">
+          <img src="img/host02.jpg"
+               class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+            <h3 class="text-white text-lg"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Sticker Branding</h3>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up"
+             onclick="openModal(this)">
+          <img src="img/host03.jpg"
+               class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+            <h3 class="text-white text-lg"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Undangan Wedding</h3>
+          </div>
+        </div>
+
+        <!-- Baris 2 -->
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up"
+             onclick="openModal(this)">
+          <img src="img/host01.jpg"
+               class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+            <h3 class="text-white text-lg"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Banner Event</h3>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up"
+             onclick="openModal(this)">
+          <img src="img/host02.jpg"
+               class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+            <h3 class="text-white text-lg"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Sticker Branding</h3>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up"
+             onclick="openModal(this)">
+          <img src="img/host03.jpg"
+               class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+            <h3 class="text-white text-lg"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Undangan Wedding</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about"
     class="bg-gradient-to-b from-[#B11226] to-[#7A1212] text-white py-20 md:py-28 px-6">
 
     <div class="max-w-3xl mx-auto text-center">
 
       <h2 class="text-2xl md:text-3xl mb-6 animate-fade-up"
           style="font-family: 'Roboto', sans-serif; font-weight: 700;">
-        Tentang Kami
+          About
       </h2>
 
       <p class="text-white/90 leading-relaxed mb-6 animate-fade-up"
          style="font-family: 'Roboto', sans-serif; font-weight: 300;">
-        <span style="font-family: 'Roboto', sans-serif; font-weight: 700;">SatriaF.Design</span>
-        adalah layanan percetakan dan desain grafis
-        berbasis di Bandar Lampung yang berkomitmen menghadirkan hasil cetak
-        berkualitas dengan pelayanan terbaik.
+         <span style="font-family: 'Roboto', sans-serif; font-weight: 700;">SatriaF.Design</span>
+         adalah layanan percetakan dan desain grafis
+         berbasis di Bandar Lampung yang berkomitmen menghadirkan hasil cetak
+         berkualitas dengan pelayanan terbaik.
       </p>
 
       <p class="text-white/80 leading-relaxed animate-fade-up"
          style="font-family: 'Roboto', sans-serif; font-weight: 300;">
-        Kami melayani kebutuhan personal hingga bisnis — mulai dari fotocopy,
-        banner, undangan, sticker, hingga branding kendaraan untuk menunjang
-        promosi usaha Anda.
+         Kami melayani kebutuhan personal hingga bisnis — mulai dari fotocopy,
+         banner, undangan, sticker, hingga branding kendaraan untuk menunjang
+         promosi usaha Anda.
       </p>
 
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio" class="bg-white py-20 px-6 text-center">
-    <h2 class="text-2xl md:text-3xl text-center mb-12 text-[#4D4D4D] animate-fade-up"
-        style="font-family: 'Roboto', sans-serif; font-weight: 700;">
-      Creative Collection
-    </h2>
+  <!-- Collection Section -->
+  <section id="collection" class="bg-[#F8F8F8] py-24 px-6 text-center">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> <!-- tambah padding horizontal -->
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-
-      <!-- Box 1 -->
-      <div class="flex flex-col items-center">
-        <img
-          src="img/icon/blackbox.svg"
-          alt="Catalog Website"
-          class="w-full max-w-[220px] sm:max-w-[280px] md:max-w-sm rounded mb-4 animate-fade-up"
-        >
-        <h3 class="text-lg md:text-xl text-[#4D4D4D] animate-fade-up"
-            style="font-family: 'Roboto', sans-serif; font-weight: 500;">
-          Catalog Website
-        </h3>
-        <p class="text-sm md:text-base text-gray-600 animate-fade-up"
-           style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-          Interactive Brand Catalog
+      <div class="mb-16">
+        <h2 class="text-2xl md:text-4xl font-bold text-[#4D4D4D] mb-4 animate-fade-up"
+            style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+            Collection
+        </h2>
+        <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto animate-fade-up"
+           style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+           Kami percaya identitas visual yang kuat menciptakan kesan yang tak terlupakan.
+           Setiap detail dirancang dengan presisi dan karakter.
         </p>
       </div>
 
-      <!-- Box 2 -->
-      <div class="flex flex-col items-center">
-        <img
-          src="img/icon/whitebox.svg"
-          alt="Exclusive Creative Series"
-          class="w-full max-w-[220px] sm:max-w-[280px] md:max-w-sm rounded mb-4 animate-fade-up"
-        >
-        <h3 class="text-lg md:text-xl text-[#4D4D4D] animate-fade-up"
-            style="font-family: 'Roboto', sans-serif; font-weight: 500;">
-          Exclusive Creative Series
-        </h3>
-        <p class="text-sm md:text-base text-gray-600 animate-fade-up"
-           style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-          Limited Edition Visual Design
-        </p>
+      <!-- Grid dengan gap lebih lega -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 px-2 sm:px-4"> <!-- tambah gap & padding horizontal -->
+
+        <!-- Box Hitam -->
+        <div class="group relative overflow-hidden rounded-3xl bg-white shadow-md hover:shadow-xl transition duration-500 p-6 animate-fade-up">
+          <!-- Container padding p-6 = ruang dari border -->
+          <img src="img/icon/blackbox.svg"
+               class="mx-auto my-4 w-4/5 h-auto object-contain transition duration-700 group-hover:scale-105 rounded-xl">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-xl">
+            <h3 class="text-white text-lg" style="Roboto', sans-serif; font-weight: 500">Premium Packaging Concept</h3>
+          </div>
+        </div>
+
+        <!-- Box Putih -->
+        <div class="group relative overflow-hidden rounded-3xl bg-white shadow-md hover:shadow-xl transition duration-500 p-6 animate-fade-up">
+          <!-- Container padding p-6 = ruang dari border -->
+          <img src="img/icon/whitebox.svg"
+               class="mx-auto my-4 w-4/5 h-auto object-contain transition duration-700 group-hover:scale-105 rounded-xl">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-xl">
+            <h3 class="text-white text-lg" style="Roboto', sans-serif; font-weight: 500">Premium Packaging Concept</h3>
+          </div>
+        </div>
+
+        <!-- Kaos -->
+        <div class="group relative overflow-hidden rounded-3xl bg-white shadow-md hover:shadow-xl transition duration-500 p-2 animate-fade-up">
+          <img src="img/tshirt-logo.jpg"
+               class="w-full aspect-[4/3] object-cover transition duration-700 group-hover:scale-105 rounded-2xl">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-2xl">
+            <h3 class="text-white text-lg" style="Roboto', sans-serif; font-weight: 500">Wearable Brand Expression</h3>
+          </div>
+        </div>
+
+        <!-- Paper Bag -->
+        <div class="group relative overflow-hidden rounded-3xl bg-white shadow-md hover:shadow-xl transition duration-500 p-2 animate-fade-up">
+          <img src="img/paperbag-logo.jpg"
+               class="w-full aspect-[4/3] object-cover transition duration-700 group-hover:scale-105 rounded-2xl">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-2xl">
+            <h3 class="text-white text-lg" style="Roboto', sans-serif; font-weight: 500">Signature Visual Experience</h3>
+          </div>
+        </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="kontak" class="bg-neutral-900 text-gray-300 py-14">
+
+  <!-- Footer & Contact Section-->
+  <footer id="contact" class="bg-neutral-900 text-gray-300 py-14">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
 
       <!-- Brand -->
       <div>
         <h3 class="text-2xl text-white mb-2 animate-fade-up"
             style="font-family: 'Roboto', sans-serif; font-weight: 700;">
-          SatriaF.Design
+            SatriaF.Design
         </h3>
         <p class="text-sm text-gray-400 animate-fade-up"
            style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-          Percetakan & Fotocopy terpercaya di Bandar Lampung.<br>
-          Digital Printing & Graphic Design.
+           Percetakan & Fotocopy terpercaya di Bandar Lampung.<br>
+           Digital Printing & Graphic Design.
         </p>
       </div>
 
@@ -441,7 +547,7 @@
       <div>
         <h4 class="text-white mb-3 animate-fade-up"
             style="font-family: 'Roboto', sans-serif; font-weight: 700;">
-          Kontak Kami
+            Kontak Kami
         </h4>
 
         <ul class="space-y-2 text-sm">
@@ -471,16 +577,16 @@
       <div>
         <h4 class="text-white mb-3 animate-fade-up"
             style="font-family: 'Roboto', sans-serif; font-weight: 700;">
-          Temukan Kami
+            Temukan Kami
         </h4>
 
         <div class="flex gap-4 mb-4 animate-fade-up"
              style="font-family: 'Roboto', sans-serif; font-weight: 500;">
           <a href="https://instagram.com/satriaf.design" class="hover:text-white transition">
-            Instagram
+             Instagram
           </a>
           <a href="https://facebook.com/satria.ferdiansyah.sf" class="hover:text-white transition animate-fade-up">
-            Facebook
+             Facebook
           </a>
         </div>
 
@@ -501,7 +607,7 @@
     <!-- Copyright -->
     <div class="mt-10 text-center text-xs text-gray-500 animate-fade-up"
          style="font-family: 'Roboto', sans-serif; font-weight: 500;">
-      © 2026 SatriaF.Design. All rights reserved.
+         © 2026 SatriaF.Design. All rights reserved.
     </div>
   </footer>
 
@@ -531,19 +637,43 @@
     });
   </script>
 
+  <!-- Animasi Project Gallery -->
+  <script>
+  const modal = document.getElementById("galleryModal");
+  const modalImage = document.getElementById("modalImage");
+
+  function openModal(element) {
+    const img = element.querySelector("img");
+    modalImage.src = img.src;
+
+    modal.classList.remove("opacity-0", "pointer-events-none");
+    modalImage.classList.remove("scale-95");
+  }
+
+  function closeModal() {
+    modal.classList.add("opacity-0", "pointer-events-none");
+    modalImage.classList.add("scale-95");
+  }
+
+  modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  </script>
+
+  <!-- Modal -->
+  <div id="galleryModal"
+       class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition duration-500 z-50">
+
+    <img id="modalImage"
+         class="max-w-[90%] max-h-[85%] rounded-2xl shadow-2xl transform scale-95 transition duration-500">
+
+    <button onclick="closeModal()"
+            class="absolute top-6 right-6 text-white text-3xl font-light hover:scale-110 transition">
+      &times;
+    </button>
+  </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
