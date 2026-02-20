@@ -269,6 +269,14 @@
         closeMenu();
       }
     });
+
+    // RESET BACKDROP BLUR LOGO NAVBAR
+    const logoLink = document.querySelector('header a[href="#home"]');
+    logoLink.addEventListener('click', () => {
+      if (window.innerWidth < 768) {
+        closeMenu();
+      }
+    });
   </script>
 
   <!-- Services Section -->
@@ -679,4 +687,5 @@
   </script>
 </body>
 </html>
+
 
