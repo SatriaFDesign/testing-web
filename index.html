@@ -172,7 +172,7 @@
 
   <!-- Hero Section -->
   <section id="home"
-    class="scroll-mt-24 min-h-[100svh] flex flex-col justify-center items-center text-center px-4 pt-6 md:pt-16 pb-0 bg-gradient-to-b from-[#FFFFFF] to-[#F6F6F6]">
+    class="min-h-[100svh] flex flex-col justify-center items-center text-center px-4 pt-6 md:pt-16 pb-0 bg-gradient-to-b from-[#FFFFFF] to-[#F6F6F6]">
     
     <h1
       class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-10 text-center text-[#4D4D4D]"
@@ -272,7 +272,7 @@
   </script>
 
   <!-- Services Section -->
-  <section id="services" class="scroll-mt-24 bg-white pt-8 pb-14 md:pt-16 md:pb-20">
+  <section id="services" class="bg-white pt-8 pb-14 md:pt-16 md:pb-20">
     <div class="max-w-7xl mx-auto px-6">
 
       <h2
@@ -348,7 +348,7 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="scroll-mt-24 bg-gradient-to-b from-[#F6F6F6] to-[#FFFFFF] pt-8 pb-14 md:pt-16 md:pb-20">
+  <section id="portfolio" class="bg-gradient-to-b from-[#F6F6F6] to-[#FFFFFF] pt-8 pb-14 md:pt-16 md:pb-20">
     <div class="max-w-7xl mx-auto px-6">
 
       <div class="text-center mb-12">
@@ -430,7 +430,7 @@
 
   <!-- About Section -->
   <section id="about"
-           class="scroll-mt-24 bg-gradient-to-b from-[#B11226] to-[#7A1212] text-white pt-8 pb-14 md:pt-16 md:pb-20 px-6">
+           class="bg-gradient-to-b from-[#B11226] to-[#7A1212] text-white pt-8 pb-14 md:pt-16 md:pb-20 px-6">
 
     <div class="max-w-3xl mx-auto text-center">
 
@@ -458,7 +458,7 @@
   </section>
 
     <!-- Collection Section -->
-   <section id="collection" class="scroll-mt-24 bg-white pt-8 pb-14 md:pt-16 md:pb-20 px-6 text-center">
+   <section id="collection" class="bg-white pt-8 pb-14 md:pt-16 md:pb-20 px-6 text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   
       <h2 class="text-3xl md:text-4xl font-bold text-[#4D4D4D] mb-4 animate-fade-up"
@@ -520,7 +520,7 @@
 
   <!-- Footer & Contact Section-->
   <footer id="contact"
-          class="scroll-mt-24 bg-neutral-900 text-gray-300 pt-8 pb-10 md:pt-16 md:pb-16">
+          class="bg-neutral-900 text-gray-300 pt-8 pb-10 md:pt-16 md:pb-16">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
 
         <!-- Brand -->
@@ -665,6 +665,18 @@
       &times;
     </button>
   </div>
+  
+  <!-- Agar Scroll Pas Dibawah Navbar -->
+  <script>
+  function setAnchorOffset() {
+    const header = document.querySelector("header");
+    const headerHeight = header.offsetHeight;
+    document.documentElement.style.scrollPaddingTop = headerHeight + "px";
+  }
 
+  window.addEventListener("load", setAnchorOffset);
+  window.addEventListener("resize", setAnchorOffset);
+  </script>
 </body>
 </html>
+
